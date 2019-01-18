@@ -1,0 +1,47 @@
+.fond{
+margin: 15% 25%;
+color: yellow;
+margin: 0;
+transform :perspective(320px)rotateX(15deg);
+/*transform-origin: bottom center;
+animation-name: crawl;
+animation-duration: 32s;
+animation-timing-function: linear;*/
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-image: url(fondetoile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text{
+  animation-name: crawl;
+  animation-duration: 16s;
+  animation-timing-function: linear;
+  /*background-image: url(fondetoile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+p{
+font-size:32px;
+  /*justifier le texte*/
+}
+@keyframes crawl {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-500px);
+    opacity: 1;
+  }
+  100% {
+     transform: translateY(-600px);
+     opacity: 0;
+  }
